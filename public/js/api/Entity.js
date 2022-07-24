@@ -9,7 +9,13 @@ class Entity {
    * (в зависимости от того, что наследуется от Entity)
    * */
   static list(data, callback){
-
+    createRequest({
+      data, //data: data
+      callback,
+      method: 'GET',
+      responseType: 'json',
+      url: this.URL
+    });
   }
 
   /**
@@ -18,14 +24,28 @@ class Entity {
    * что наследуется от Entity)
    * */
   static create(data, callback) {
-
+    createRequest({
+      data, //data: data
+      callback,
+      method: 'PUT',
+      responseType: 'json',
+      url: this.URL
+    });
   }
 
   /**
    * Удаляет информацию о счёте или доходе/расходе
    * (в зависимости от того, что наследуется от Entity)
    * */
-  static remove(data, callback ) {
-
+  static remove(data, callback) {
+    createRequest({
+      data, //data: data
+      callback,
+      method: 'DELETE',
+      responseType: 'json',
+      url: this.URL
+    });
   }
 }
+
+Entity.URL = '';
