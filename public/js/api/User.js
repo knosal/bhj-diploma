@@ -24,9 +24,10 @@ class User {
    * из локального хранилища
    * */
   static current() {
-    const user = localStorage.user;
-    return user ? JSON.parse(user) : user;
+    /*const user = localStorage.user;
+    return user ? JSON.parse(user) : user;*/
     // либо через getItem
+    return JSON.parse(localStorage.getItem('user'));
   }
   /**
    * Получает информацию о текущем
@@ -93,19 +94,17 @@ class User {
    * Производит выход из приложения. После успешного
    * выхода необходимо вызвать метод User.unsetCurrent
    * */
-  static logout(callback) {
+  static logout(data, callback) {
     createRequest({
       url: this.URL + '/logout',
       method: 'POST',
       responseType: 'json',
+      data,
       callback: (err, response) => {
         if (response && response.success) {
           this.unsetCurrent();
-          //App.update();
-          location.reload(true);
         }
         callback(err, response);
-       
       }
     });
   }
