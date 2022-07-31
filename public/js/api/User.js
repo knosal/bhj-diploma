@@ -101,6 +101,7 @@ class User {
       callback: (err, response) => {
         if (response && response.success) {
           this.unsetCurrent();
+          //App.update();
           location.reload(true);
         }
         callback(err, response);

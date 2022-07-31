@@ -23,6 +23,12 @@
       "email": "jiupuk@knosal.ru",
       "password": "1234",
       "id": "2qm0b5tkl5z73xx9"
+    },
+    {
+      "name": "Грузин",
+      "email": "kiokms2009@rambler.ru",
+      "password": "1234",
+      "id": "2qm0b5t4l5zdnnl0"
     }
   ],
   "accounts": [
@@ -251,6 +257,15 @@
       "account_id": "2qm0b3e4l5zb2u7h",
       "user_id": "2qm0b5tkl5z73xx9",
       "created_at": "2022-07-24T13:38:38.554Z"
+    },
+    {
+      "id": "2qm0b5t4l5zdlhwh",
+      "type": "income",
+      "name": "Продажа",
+      "sum": 1000,
+      "account_id": "2qm0b3swl5z9y348",
+      "user_id": "2qm0b5tkl5z73xx9",
+      "created_at": "2022-07-24T13:48:31.840Z"
     }
   ]
 }
