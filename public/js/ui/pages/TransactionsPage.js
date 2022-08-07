@@ -62,14 +62,12 @@ class TransactionsPage {
 			return
 		}
 		Account.remove(this.lastOptions.account_id, (err, response) => {
-      let obj = {
-        id: this.lastOptions.account_id,
-       callback: (err, response)
-      }
 			if (response && response.success) {
 				this.clear();
 				App.update();
-			}
+			} else {
+        throw new Error('Что-то пошло не так!');
+      }
 		});
   }
 
@@ -81,10 +79,12 @@ class TransactionsPage {
    * */
   removeTransaction( id ) {
     if (confirm("Вы действительно хотите удалить эту транзакцию?")) {
-			Transaction.remove(id, (err, response) => {
+			Transaction.remove({id}, (err, response) => {
 				if (response && response.success) {
 					App.update();
-				}
+				} else {
+          throw new Error('Что-то пошло не так!');
+        }
 			});
 		}
   }

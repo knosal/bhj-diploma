@@ -232,15 +232,6 @@
       "created_at": "2022-07-24T12:07:06.861Z"
     },
     {
-      "id": "2qm0b3swl5za0xf1",
-      "type": "expense",
-      "name": "Брак Тест",
-      "sum": 1,
-      "account_id": "2qm0b3ssl5z9ft5h",
-      "user_id": "2qm0b5tkl5z73xx9",
-      "created_at": "2022-07-24T12:08:33.325Z"
-    },
-    {
       "id": "2qm0b3e4l5zb2i0j",
       "type": "income",
       "name": "Аванс",
@@ -248,15 +239,6 @@
       "account_id": "2qm0b3ssl5z9ft5h",
       "user_id": "2qm0b5tkl5z73xx9",
       "created_at": "2022-07-24T12:37:46.291Z"
-    },
-    {
-      "id": "2qm0b7isl5zd8s4b",
-      "type": "income",
-      "name": "Основной",
-      "sum": 3000,
-      "account_id": "2qm0b3e4l5zb2u7h",
-      "user_id": "2qm0b5tkl5z73xx9",
-      "created_at": "2022-07-24T13:38:38.554Z"
     },
     {
       "id": "2qm0b5t4l5zdlhwh",
@@ -268,15 +250,6 @@
       "created_at": "2022-07-24T13:48:31.840Z"
     },
     {
-      "id": "2qm0b6dgl699vy2r",
-      "type": "income",
-      "name": "Основной",
-      "sum": 500,
-      "account_id": "2qm0b3ssl5z9ft5h",
-      "user_id": "2qm0b5tkl5z73xx9",
-      "created_at": "2022-07-31T12:02:22.658Z"
-    },
-    {
       "id": "2qm0b6dgl699w9sc",
       "type": "expense",
       "name": "Пиво",
@@ -284,6 +257,15 @@
       "account_id": "2qm0b3ssl5z9ft5h",
       "user_id": "2qm0b5tkl5z73xx9",
       "created_at": "2022-07-31T12:02:37.836Z"
+    },
+    {
+      "id": "2qm0b90cl69bfrko",
+      "type": "income",
+      "name": "Аванс",
+      "sum": 1000,
+      "account_id": "2qm0b3swl5z9y348",
+      "user_id": "2qm0b5tkl5z73xx9",
+      "created_at": "2022-07-31T12:45:46.968Z"
     }
   ]
 }

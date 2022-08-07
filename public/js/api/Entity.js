@@ -42,7 +42,6 @@ class Entity {
       data, //data: data
       callback,
       method: 'DELETE',
-      responseType: 'json',
       url: this.URL
     });
   }
