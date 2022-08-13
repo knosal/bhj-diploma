@@ -61,16 +61,17 @@ class TransactionsPage {
 		if (!confirm("Вы действительно хотите удалить счет?")) {
 			return
 		}
-		Account.remove(this.lastOptions.account_id, (err, response) => {
+    const accData = {id : this.lastOptions.account_id};
+
+		Account.remove(accData, (err, response) => {
 			if (response && response.success) {
-				this.clear();
-				App.update();
+				App.widgets.accounts.update();
 			} else {
         throw new Error('Что-то пошло не так!');
       }
 		});
+    this.clear();
   }
-
   /**
    * Удаляет транзакцию (доход или расход). Требует
    * подтверждеия действия (с помощью confirm()).

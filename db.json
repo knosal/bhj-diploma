@@ -61,11 +61,6 @@
       "name": "ВТБ",
       "user_id": "2qm0b5tkl5z73xx9",
       "id": "2qm0b3swl5z9y348"
-    },
-    {
-      "name": "Брак Тест",
-      "user_id": "2qm0b5tkl5z73xx9",
-      "id": "2qm0b3e4l5zb2u7h"
     }
   ],
   "transactions": [
@@ -250,15 +245,6 @@
       "created_at": "2022-07-24T13:48:31.840Z"
     },
     {
-      "id": "2qm0b6dgl699w9sc",
-      "type": "expense",
-      "name": "Пиво",
-      "sum": 1000,
-      "account_id": "2qm0b3ssl5z9ft5h",
-      "user_id": "2qm0b5tkl5z73xx9",
-      "created_at": "2022-07-31T12:02:37.836Z"
-    },
-    {
       "id": "2qm0b90cl69bfrko",
       "type": "income",
       "name": "Аванс",
@@ -266,6 +252,24 @@
       "account_id": "2qm0b3swl5z9y348",
       "user_id": "2qm0b5tkl5z73xx9",
       "created_at": "2022-07-31T12:45:46.968Z"
+    },
+    {
+      "id": "2qm0b8lsl6rpt20l",
+      "type": "income",
+      "name": "Аванс",
+      "sum": 4000,
+      "account_id": "2qm0b3swl5z9y348",
+      "user_id": "2qm0b5tkl5z73xx9",
+      "created_at": "2022-08-13T09:47:52.820Z"
+    },
+    {
+      "id": "2qm0b8lsl6rpthgw",
+      "type": "income",
+      "name": "Аванс",
+      "sum": 10000,
+      "account_id": "2qm0b3swl5z9y348",
+      "user_id": "2qm0b5tkl5z73xx9",
+      "created_at": "2022-08-13T09:48:12.848Z"
     }
   ]
 }
